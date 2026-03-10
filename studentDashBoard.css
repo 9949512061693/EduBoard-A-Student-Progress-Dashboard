@@ -1,0 +1,96 @@
+.dashboard {
+    height: 90vh;
+    display: flex;
+}
+
+.header {
+    height: 70px;
+    width:100vw;
+}
+
+.header-icons i{
+    font-size:22px;
+}
+
+@media screen and (width:768px) {
+    .header-icons i {
+        font-size: 32px;
+    }
+}
+
+.sidebar {
+    width: 240px;
+    background-color: #0f172a;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px){
+    .sidebar {
+        width: 130px;
+    }
+}
+
+.sidebar h2 {
+    font-family: 'Poppins', "sans-serif";
+    font-size: 28px;
+    font-weight: 600;
+}
+
+@media screen  and (max-width :768px){
+    .sidebar h2{
+        font-size: 18px;
+    }
+}
+
+.sidebar-ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-ul li {
+    margin: 15px 0px;
+    font-family: "";
+    font-size:18px;
+    font-weight: 400;
+
+}
+
+.sidebar-ul li:hover a {
+    color: red;
+}
+
+@media screen and (max-width :768px){
+    .sidebar-ul a{
+        font-size: 14px;
+    }
+}
+
+.section {
+    margin-top: auto;
+}
+
+.section div{
+    margin: 20px 0px;
+    font-family: "Roboto";
+    font-size:22px;
+    font-weight:500;
+}
+
+@media screen and (max-width :768px){
+    .section div {
+        font-size: 14px;
+    }
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+.card:hover{
+transform:translateY(-3px);
+transition:0.2s;
+}

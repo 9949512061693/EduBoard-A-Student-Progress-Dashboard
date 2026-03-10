@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Progress Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="studentDashBoard.css">
+</head>
+
+<body>
+    <div>
+        <header class="navbar header p-2 bg-light d-flex justify-content-between align-items-center px-3">
+            <h1 class="text-dark fs-4 ps-4 fw-semibold mb-0">EduBoard Dashboard</h1>
+            <div class="header-icons d-flex align-items-center gap-3">
+                <i class="fa-regular fa-bell me-3"></i>
+                <div class="d-flex flex-column align-items-center text-center">
+                    <img src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light'
+                        height="45" width="45" class="round-circle me-4" alt="Student Avatar"/>
+                    <span class="fw-semibold" style ="font-size: 12px;" >Anand Addanki</span>
+                </div>
+            </div>
+        </header>
+        <div class="dashboard">
+            <aside class="sidebar">
+                <h2 class="text-white text-center">EduBoard</h2>
+                <ul class="sidebar-ul ps-2">
+                    <li><a href="" class="text-white text-decoration-none ">DashBoard</a></li>
+                    <li><a href="" class="text-white text-decoration-none">Subject</a></li>
+                    <li> <a href="" class="text-white text-decoration-none">Attendance</a></li>
+                </ul>
+                <div class="section ps-2">
+                    <div class="d-flex flex-row justify-content-left align-items-center">
+                        <i class="fa-regular fa-user text-white me-2 "></i>
+                        <p class="text-white mb-0">Profile</p>
+                    </div>
+                    <div class="d-flex flex-row align-items-center">
+                        <i class="fa-solid fa-gear text-white me-2"></i>
+                        <p class="text-white mb-0 mt-0">Settings</p>
+                    </div>
+                </div>
+            </aside>
+            <main class="main">
+                <div class="container overflow-auto h-100">
+                    <div class="row gap-2 p-4">
+                        <h4 class="fw-semibold mb-3">Student Overview</h4>
+                        <section class="col-12 col-md-6 col-lg-3">
+                            <div class="card shadow-sm border-0 p-1">
+                                <div class="card-body d-flex justify-content-between align-items-center">
+
+                                    <div>
+                                        <p class="text-muted mb-1">GPA</p>
+                                        <h3 class="fw-bold mb-0 text-dark">8.0</h3>
+                                    </div>
+
+                                    <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                                        style="width:50px;height:50px;">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="col-12 col-md-6 col-lg-3">
+                            <div class="card shadow-sm border-0 p-1">
+                                <div class="card-body d-flex justify-content-between align-items-center m-1">
+                                    <div>
+                                        <p class="text-muted mb-1">Attendence</p>
+                                        <h3 class="fw-bold mb-0 text-dark">80%</h3>
+                                    </div>
+                                    <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                                        style="width:50px;height:50px;">
+                                        <i class="fa-solid fa-calendar-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="col-12 col-md-6 col-lg-3">
+                            <div class="card shadow-sm border-0 p-1">
+                                <div class="card-body d-flex justify-content-between align-items-center m-1">
+                                    <div>
+                                        <p class="text-muted mb-1">Assigments Due </p>
+                                        <h3 class="fw-bold mb-0 text-dark">3</h3>
+                                    </div>
+                                    <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                                        style="width:50px;height:50px;">
+                                        <i class="fa-solid fa-book"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="col-12 col-md-6 col-lg-3">
+                            <div class="card shadow-sm border-0 p-1">
+                                <div class="card-body d-flex justify-content-between align-items-center m-1">
+                                    <div>
+                                        <p class="text-muted mb-1">Total Credits</p>
+                                        <h3 class="fw-bold mb-0 text-dark">8</h3>
+                                    </div>
+                                    <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                                        style="width:50px;height:50px;">
+                                        <i class="fa-solid fa-award"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="container-fluid mt-4 col-12">
+                            <h4 class="fw-semibold mb-3">Subject Progress</h4>
+                            <div class="card shadow-sm border-0">
+                                <div class="card-body">
+                                    <table class="table align-middle">
+                                        <thead>
+                                            <tr>
+                                                <th>Subject</th>
+                                                <th>Progress</th>
+                                                <th>Completion</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Mathematics</td>
+                                                <td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-success" style="width:85%"></div>
+                                                    </div>
+                                                </td>
+                                                <td>85%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Physics</td>
+                                                <td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-primary" style="width:70%"></div>
+                                                    </div>
+                                                </td>
+                                                <td>70%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Computer Science</td>
+                                                <td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-warning" style="width:60%"></div>
+                                                    </div>
+                                                </td>
+                                                <td>60%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>English</td>
+                                                <td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-danger" style="width:45%"></div>
+                                                    </div>
+                                                </td>
+                                                <td>45%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="d-flex flex-row">
+                            <section class="container-fluid mt-4 col-6">
+                                <h4 class="fw-semibold mb-3">Upcoming Deadlines</h4>
+                                <div class="card shadow-sm border-0">
+                                    <div class="card-body">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center border-bottom py-2">
+                                            <div>
+                                                <h6 class="mb-0">Math Assignment</h6>
+                                                <small class="text-muted">Chapter 5 Exercises</small>
+                                            </div>
+                                            <span class="badge bg-danger">12 Aug</span>
+                                        </div>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center border-bottom py-2">
+                                            <div>
+                                                <h6 class="mb-0">Physics Lab Report</h6>
+                                                <small class="text-muted">Experiment 3</small>
+                                            </div>
+                                            <span class="badge bg-warning text-dark">15 Aug</span>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between align-items-center py-2">
+                                            <div>
+                                                <h6 class="mb-0">Programming Project</h6>
+                                                <small class="text-muted">Build a Calculator App</small>
+                                            </div>
+                                            <span class="badge bg-primary">18 Aug</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="mt-4 col-12 col-md-6 p-3">
+                                <h4 class="fw-semibold mb-3">Student Profile</h4>
+
+                                <div class="card shadow-sm border-0 p-3">
+                                    <div class="row mb-2">
+                                        <div class="col-4 text-muted">Name</div>
+                                        <div class="col-8 fw-semibold">Anand Addanki</div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-4 text-muted">Roll No</div>
+                                        <div class="col-8">21121A0301</div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-4 text-muted">Email</div>
+                                        <div class="col-8">anand693@gmail.com</div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-4 text-muted">College</div>
+                                        <div class="col-8">Sree Vidyanikethan Engineering College</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4 text-muted">Department</div>
+                                        <div class="col-8">Mechanical Engineering</div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
